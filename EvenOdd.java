@@ -9,10 +9,10 @@ public class EvenOdd {
 
     public static void EvenOddNumberCheck(int n){
         if (n%2==0) {
-            System.out.println("It is even");
+            System.out.println("It is even ::: " + n);
             
         }else{
-            System.out.println("It is odd");
+            System.out.println("It is odd ::: " + n);
         }
     }
 }

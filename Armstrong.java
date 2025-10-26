@@ -16,15 +16,17 @@ public class Armstrong {
         } */
 
         // Use for loop instead of while
+         /* while (num > 0) {   //for four digit to any digits
+            rem = num % 10;
+            result = result + (int)Math.pow(rem, digits); // Raise to the power of digits
+            num = num / 10;
+        }  */
+          
         for (int n = num; n > 0; n = n / 10) {
             rem = n % 10;
             result += Math.pow(rem, digits);
         }
-           while (num > 0) {   //for four digit to any digits
-            rem = num % 10;
-            result = result + (int)Math.pow(rem, digits); // Raise to the power of digits
-            num = num / 10;
-        } 
+        
         if(result == temp){
             System.out.println("It is a Armstrong number");
         }else{
@@ -43,3 +45,67 @@ public class Armstrong {
 1^3+5^3+3^3 = 1+125+27 =153
 9474 → 4-digit number
 9^4+4^4+7^4+4^4 = 6561+256+2401+256=9474 */
+
+
+/* Dry Run : 
+Initial values:
+num = 153
+temp = 153
+rem = 0
+result = 0
+
+Step 1: Count digits
+digits = String.valueOf(num).length(); 
+
+
+👉 String.valueOf(153) → "153"
+👉 .length() → 3
+
+✅ digits = 3
+
+Step 2: Start the loop
+for (int n = num; n > 0; n = n / 10)
+
+🔸 Iteration 1:
+n = 153
+rem = n % 10 = 153 % 10 = 3
+result += Math.pow(rem, digits)
+result = 0 + 3³ = 27
+
+
+👉 After loop body:
+n = n / 10 = 153 / 10 = 15
+
+✅ result = 27
+
+🔸 Iteration 2:
+n = 15
+rem = n % 10 = 15 % 10 = 5
+result += Math.pow(5, 3) = 27 + 125 = 152
+
+👉 After loop body:
+n = n / 10 = 15 / 10 = 1
+
+✅ result = 152
+
+🔸 Iteration 3:
+n = 1
+rem = n % 10 = 1 % 10 = 1
+result += Math.pow(1, 3) = 152 + 1 = 153
+
+
+👉 After loop body:
+n = n / 10 = 1 / 10 = 0
+
+✅ result = 153
+
+Step 3: Exit loop
+
+Loop ends because n > 0 is now false (n = 0).
+
+Step 4: Compare
+if(result == temp)
+
+👉 result = 153, temp = 153
+
+✅ They are equal. */

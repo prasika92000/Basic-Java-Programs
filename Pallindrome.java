@@ -11,9 +11,9 @@ public class Pallindrome {
             num = num/ 10;           //151/10=15       15/10=1   1/10=0
         }
         if (temp == sum) {
-            System.out.println("It is a Pallindrome");
+            System.out.println("The number " + temp + " is a Pallindrome.");
         }else{
-            System.out.println("It is not a Pallindrome");
+            System.out.println("The number " + temp +  " is not a Pallindrome.");
 
         }
     }

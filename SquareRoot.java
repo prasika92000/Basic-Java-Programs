@@ -3,7 +3,7 @@ public class SquareRoot {
         /* double sq = Math.sqrt(25);   //math is a class under the java.lang package
         System.out.println("Square root is " + sq); */
 
-        int num = 9; // Change this number if you want
+        int num = 25; // Change this number if you want
         int i = 1;
 
         // Keep trying until i*i is greater than num

@@ -18,6 +18,6 @@ public class FibonacciSeries {
 
 
 /* The Fibonacci Series is a sequence of numbers where Each number is the sum of the two previous numbers.
-fibonaci series starts with o and 1S
+fibonaci series starts with o and 1 S
 0 1 1 2 3 5 8 13
 so here 0+1=1 ; 1+1=2 ; 2+1=3 ; 3+5=8 and so on  */
